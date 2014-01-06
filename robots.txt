@@ -1,0 +1,6 @@
+Sitemap: http://froh0007.site44.com/dsn1543/seo/sitemap.xml
+
+User-agent: *
+
+Disallow: /tmp/
+Disallow: /assets/

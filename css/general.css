@@ -1,0 +1,472 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Nav */
+
+html, body{
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.nav{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	text-transform:uppercase;
+	font-size: 1.5em;
+	color: #000000;
+}
+
+
+.main{
+	width: 90%;
+	margin: 1rem auto;
+}
+
+.hide-text{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.main{
+	padding-top:2rem;
+}
+
+
+footer{
+		clear: both;
+		padding: 1rem 0;
+		background-color: #625F5F;
+}
+
+
+/*sets up and moves nav icon*/
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 5%;
+	height:40px;
+	width:40px;
+	background: #fff url('../images/nav-icon.svg') no-repeat center center;
+	
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color: #FFF;
+}
+
+
+/* styles nav links*/
+
+
+.nav a,
+.nav a:link,
+.nav a:visited{
+	display: block;
+	text-align: center;
+	padding:1rem;
+	color: #fff;
+	text-decoration:none;
+	background-color:#000;
+	
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	background-color: #625F5F;
+	
+}
+
+.nav-bottom a,
+.nav-bottom a:link,
+.nav-bottom a:visited{
+	background-color: transparent;
+	padding: .5rem;
+	display: inline-block;
+}
+
+.nav-bottom a:hover,
+.nav-bottom a:focus,
+.nav-bottom a:active{
+	-webkit-box-shadow:  0px 3px 0px -2px #FFF;
+    box-shadow:  0px 3px 0px -2px #FFF;
+}
+
+.nav-bottom{
+	text-align:center;
+}
+
+/*toggle nav css*/
+
+.nav-top{
+	display:none;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+}
+
+/*social icons*/
+
+.ease-all{
+	-webkit-transition: all 350ms ease-in-out;
+	-moz-transition: all 350ms ease-in-out;
+	-ms-transition: all 350ms ease-in-out;
+	-o-transition: all 350ms ease-in-out;
+	transition: all 350ms ease-in-out;
+}
+
+
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+
+.social li a,
+.social li a:link,
+.social li a:visited{
+	display: inline-block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 1rem;
+	text-align:center;
+	padding-top: 0.7rem;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	color: #FFFFFF;
+	background-color: #625F5F;	
+	/*background-color: #222;*/
+
+	-webkit-box-shadow: inset 0px 0px 0px 40px #000;
+	-moz-box-shadow: inset 0px 0px 0px 40px #000;
+	-ms-box-shadow: inset 0px 0px 0px 40px #000;
+	-o-box-shadow: inset 0px 0px 0px 40px #000;
+	box-shadow: inset 0px 0px 0px 40px #000;
+
+}
+
+.social li a:hover,
+.social li a:focus,
+.social li a:active{
+	-webkit-box-shadow: inset 0px 0px 0px 3px #000;
+	-moz-box-shadow: inset 0px 0px 0px 3px #000;
+	-ms-box-shadow: inset 0px 0px 0px 3px #000;
+	-o-box-shadow: inset 0px 0px 0px 3px #000;
+	box-shadow: inset 0px 0px 0px 3px #000;
+	color:#FFFFFF;
+}
+
+.social{
+	bottom: 50px;
+	padding: 1em;
+}
+
+
+.copyright{
+	padding-top: 1em;
+	padding-left:1em;
+	
+}
+
+
+
+
+/* small screen */
+/* Home page*/
+
+html{
+	background:url(../images/background.png);
+}
+
+.number{
+	text-align: center;
+}
+
+
+h1 { 
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size: 1.3em;
+	text-transform:uppercase;
+	margin-left: .2em;
+}
+
+.tat-shop{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size: 1.8em;
+	text-transform:uppercase;
+	margin-top: -.5em;
+	margin-left: .2em;
+	
+}
+
+.logo{
+	width: 90%;
+	display: block;
+  	margin: auto auto;
+	padding-top:2em;
+	padding-bottom: 5em; 
+}
+
+
+/*about*/
+
+
+h2 {
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	text-transform:uppercase;
+	font-size: 1.5em;
+}
+
+strong{
+	font-weight:bold;
+}
+
+em {
+	font-style: italic;
+}
+
+/*artist*/
+/* Ripped text */
+
+
+
+.portrait{
+	list-style-type: none;
+	height: 200px;
+	width: 100%;
+	max-width: 200px;
+	position: relative;
+	margin: 1rem 0;
+	
+}
+
+
+.name{
+	position: absolute;
+	bottom: 0;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	text-transform:uppercase;
+	text-decoration: none;
+	font-size:2em;
+	padding-top:.3em;
+	padding-bottom:.2em;
+	background: transparent url(../images/rip.png) repeat-x center left;
+	background-size: cover;
+	display:block;
+	width: 100%;
+	z-index:100;
+	color: rgba(0,0,0,1.00);
+}
+
+
+
+
+/* each person */
+.cory{
+	background: transparent url(../images/corey/boy.png) no-repeat top center ;
+	background-size: cover;
+	
+}
+
+.kat{
+	background: transparent url(../images/kat/girl.png) no-repeat top center ;
+	background-size: cover;
+	
+}
+
+.megan{
+	background: transparent url(../images/megan/girl2.png) no-repeat top center ;
+	background-size: cover;
+	
+}
+	
+
+/*art*/
+
+/* Flexslider */ 
+
+.flexslider{
+	max-width: 400px;
+	margin: 0 auto 100px;
+	border: 3px solid #000000;
+	list-style: none;
+}
+
+.flex-caption{
+	position: absolute;
+	bottom: 3rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: 0;
+	padding: 1rem;	
+}
+
+/* after care */
+
+.after-care{
+	list-style-type: square;
+}
+
+
+
+
+/* change nav for bigger screen */
+@media only screen and (min-width: 35em){
+	
+
+	h1{
+	font-size: 2em;
+	color: #fff;
+	}
+	.nav{
+		
+
+	}
+	
+	.nav li{
+		display:block;
+		width: auto;
+		margin: 2rem 0;
+	}
+	
+	.nav a,
+	.nav a:link,
+	.nav a:visited{
+	color: #fff;
+	background-color: transparent;
+		-webkit-box-shadow: inset 300px 0px 0px 0px #000;
+        box-shadow: inset 300px 0px 0px 0px #000;
+		
+		-webkit-transition: box-shadow 350ms ease-in-out;
+	-moz-transition: box-shadow  400ms ease-in-out;
+	-ms-transition: box-shadow  400ms ease-in-out;
+	-o-transition: box-shadow  400ms ease-in-out;
+	transition: box-shadow  400ms ease-in-out;
+	}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	color: #000;
+	background-color: transparent;
+	-webkit-box-shadow: inset 0px 0px 0px 0px #000;
+        box-shadow: inset 0px 0px 0px 0px #000;
+		color: #000;
+	}
+	
+	.nav-bottom{
+		display: none;
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+
+	
+	/* rip*/
+	.nav-name{
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	text-transform:uppercase;
+	text-decoration: none;
+	font-size: 1.3em;
+	background: transparent url(../images/rip.png) repeat-x center left;
+	background-size: cover;
+	display:block;
+	width: 100%;
+
+}
+
+
+.nav-top{
+display: block;
+}
+
+/* make vertical */
+nav{
+
+}
+
+body, html{
+	height: 100%;
+}
+
+header{
+	background-color:#000;
+	margin: 0;
+	padding:0;
+	float: left;
+	width: 20%;
+	display: block;
+	height: 100%;
+}
+
+footer{
+	clear: both;
+}
+.main{
+	width: 80%;
+	float: right;
+
+	padding: 1em;
+	clear: none;
+}
+.logo{ 
+	width: 600px;
+	margin-top:2em;
+}
+}
+
+@media only screen and (min-width: 75em){
+header{
+	max-width: 250px;
+}
+
+.logo{
+	padding:0;
+	margin: auto auto;
+}
+
+main{
+	font-size: 1.3em;
+
+}
+
+.portrait{
+	right: 50px;
+	margin-left: 2em;
+	margin-top: 1em;
+	width: 100%
+}
+
+.name{
+	font-size: 30px;
+}
+
+.flexslider{
+	max-width: 550px;
+	margin: 0 auto 100px;
+	border: 3px solid #000000;
+	list-style: none;
+}
+}
+
+
+	
